@@ -5,7 +5,10 @@ const Home=()=> {
   return (
     <div className="home">
       <Sidebar/>
-      <div className='home-container'>Home Container</div>
+      <div className='home-container'>
+        <Navbar/>
+        Contatior
+      </div>
     </div>
   )
 }
