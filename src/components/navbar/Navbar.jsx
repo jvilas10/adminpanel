@@ -25,8 +25,7 @@ export const Navbar = () => {
           </div>
           <div className="item">
           <FullscreenExitSharpIcon /> 
-          </div>
-      
+          </div>      
           <div className="item">
            <NotificationsNoneSharpIcon/>
           </div>
