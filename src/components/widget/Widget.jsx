@@ -11,7 +11,7 @@ const Widget=({type})=> {
 
   //teamparay
   const amount = 100;
-  const diff = 20;
+ // const diff = 20;
 
   switch(type){
      case "user":

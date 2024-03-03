@@ -7,8 +7,12 @@ import DarkModeSharpIcon from '@mui/icons-material/DarkModeSharp';
 import ChatBubbleOutlineSharpIcon from '@mui/icons-material/ChatBubbleOutlineSharp';
 import ReorderSharpIcon from '@mui/icons-material/ReorderSharp';
 import FaceSharpIcon from '@mui/icons-material/FaceSharp';
+import { DarkModeContext } from "../../context/darkModeContext";
+import { useContext } from "react";
 
 export const Navbar = () => {
+  const { dispatch } = useContext(DarkModeContext);
+
   return (
    <div className='navbar'>
      <div className='wrapper'>
@@ -21,7 +25,8 @@ export const Navbar = () => {
           <LanguageSharpIcon /> Languages
           </div>
           <div className="item">
-          <DarkModeSharpIcon /> 
+          <DarkModeSharpIcon  className="icon"
+              onClick={() => dispatch({ type: "TOGGLE" })}/> 
           </div>
           <div className="item">
           <FullscreenExitSharpIcon /> 
